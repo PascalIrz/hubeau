@@ -4,6 +4,9 @@
     <loc>https://inrae.github.io/hubeau/404.html</loc>
   </url>
   <url>
+    <loc>https://inrae.github.io/hubeau/CONTRIBUTING.html</loc>
+  </url>
+  <url>
     <loc>https://inrae.github.io/hubeau/LICENSE-text.html</loc>
   </url>
   <url>
@@ -25,7 +28,7 @@
     <loc>https://inrae.github.io/hubeau/reference/doApiQuery.html</loc>
   </url>
   <url>
-    <loc>https://inrae.github.io/hubeau/reference/get_available_params.html</loc>
+    <loc>https://inrae.github.io/hubeau/reference/get_ecoulement.html</loc>
   </url>
   <url>
     <loc>https://inrae.github.io/hubeau/reference/get_hydrometrie.html</loc>
@@ -37,6 +40,9 @@
     <loc>https://inrae.github.io/hubeau/reference/get_niveaux_nappes.html</loc>
   </url>
   <url>
+    <loc>https://inrae.github.io/hubeau/reference/get_poisson.html</loc>
+  </url>
+  <url>
     <loc>https://inrae.github.io/hubeau/reference/get_prelevements.html</loc>
   </url>
   <url>
@@ -44,5 +50,8 @@
   </url>
   <url>
     <loc>https://inrae.github.io/hubeau/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://inrae.github.io/hubeau/reference/lists.html</loc>
   </url>
 </urlset>
