@@ -46,6 +46,15 @@
     <loc>https://inrae.github.io/hubeau/reference/get_prelevements.html</loc>
   </url>
   <url>
+    <loc>https://inrae.github.io/hubeau/reference/get_qualite_eau_potable.html</loc>
+  </url>
+  <url>
+    <loc>https://inrae.github.io/hubeau/reference/get_qualite_nappe.html</loc>
+  </url>
+  <url>
+    <loc>https://inrae.github.io/hubeau/reference/get_temperature.html</loc>
+  </url>
+  <url>
     <loc>https://inrae.github.io/hubeau/reference/hubeau.html</loc>
   </url>
   <url>
@@ -53,8 +62,5 @@
   </url>
   <url>
     <loc>https://inrae.github.io/hubeau/reference/lists.html</loc>
-  </url>
-  <url>
-    <loc>https://inrae.github.io/hubeau/reference/utils.html</loc>
   </url>
 </urlset>
