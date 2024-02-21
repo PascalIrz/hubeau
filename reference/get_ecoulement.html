@@ -24,7 +24,7 @@ See the API documentation for available filter parameters: https://hubeau.eaufra
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">hubeau</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.4.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.4.2</span>
       </span>
     </div>
 
@@ -39,6 +39,9 @@ See the API documentation for available filter parameters: https://hubeau.eaufra
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu"><li>
+      <a href="../articles/data_extraction_naiades.html">Getting data from the API "qualité des cours d'eau"</a>
+    </li>
+    <li>
       <a href="../articles/example_ecoulement_api.html">Performing queries on the 'Ecoulement' API</a>
     </li>
     <li>
@@ -156,8 +159,8 @@ for a given API endpoint and see the API documentation for their description</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [16] "libelle_reseau"       "date_observation_min" "date_observation_max"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [19] "code_ecoulement"      "libelle_ecoulement"   "longitude"           </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [22] "latitude"             "distance"             "bbox"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [25] "page"                 "size"                 "fields"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [28] "Accept"              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [25] "sort"                 "page"                 "size"                </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [28] "fields"               "Accept"              </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Retrieve the river flow data in the Jura departement in 2022 with</span></span></span>
 <span class="r-in"><span><span class="co"># a selection of the fields</span></span></span>
@@ -171,16 +174,16 @@ for a given API endpoint and see the API documentation for their description</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 336 × 4</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    code_station libelle_station              date_observation libelle_ecoulement</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> U3404031     Ruisseau le Dard à Baume-Le… 2022-10-24       Ecoulement visibl…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> V2310001     Le buronnet à Mesnois        2022-10-24       Ecoulement visibl…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> V2805311     Ruisseau de Noëltant à Louv… 2022-10-24       Ecoulement visibl…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> V2805312     Ruisseau le Ponson à Saint-… 2022-10-24       Ecoulement non vi…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> V2305631     la combe rosier à la Frasnee 2022-10-24       Ecoulement visibl…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> V2444031     Ruisseau D'Héria à Jeurre    2022-10-24       Ecoulement visibl…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> V2430001     Rivière le Lison aux Crozets 2022-10-24       Ecoulement visibl…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> V2430002     Rivière le Lison à Ravillol… 2022-10-24       Ecoulement visibl…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> V2409412     Bief février à Les Rousses   2022-10-24       Ecoulement visibl…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> V2409411     Ruisseau l'Évalude à Morez   2022-10-24       Ecoulement visibl…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> U2640003     Pont D7 à GERMIGNEY          2022-10-24       Ecoulement non vi…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> U2655034     ruisseau de la verine à Vau… 2022-10-24       Ecoulement visibl…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> U1084012     Ruisseau de la Serre à Sali… 2022-10-24       Ecoulement visibl…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> U2542011     Ruisseau Du Moulinot à Aman… 2022-10-24       Ecoulement visibl…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> U3404032     Rivière la Seille à Domblans 2022-10-24       Ecoulement visibl…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> U3415031     La Brenne à Miery            2022-10-24       Ecoulement visibl…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> U3404031     Ruisseau le Dard à Baume-Le… 2022-10-24       Ecoulement visibl…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> V2805311     Ruisseau de Noëltant à Louv… 2022-10-24       Ecoulement visibl…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> V2805312     Ruisseau le Ponson à Saint-… 2022-10-24       Ecoulement non vi…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> V2444031     Ruisseau D'Héria à Jeurre    2022-10-24       Ecoulement visibl…</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 326 more rows</span></span>
 <span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
